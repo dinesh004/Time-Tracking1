@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="startTime">Edit Start Time</label>
+            <input name="startTime" type="time" class="form-control" placeholder="Start Time" [(ngModel)]="editForm.startTime">
+          </div>
+          <div class="col">
+            <label for="endTime">Edit End Time</label>
+            <input name="endTime" type="time" class="form-control" placeholder="End Time" [(ngModel)]="editForm.endTime">
+          </div>
+          <div class="col-7">
+            <label for="task">Edit Task</label>
+            <input name="task" type="text" class="form-control" placeholder="Task" [(ngModel)]="editForm.task">
+          </div>
+          <div class="col-auto">
+            <div class="col mt-4">
+            <button type="submit" (click)="updateData()" class="btn btn-primary">Update</button>
+          </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
